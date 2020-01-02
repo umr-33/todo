@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resources :users, only: [] do
     resources :tasks, only: :index
   end
-  resources :tasks, only: :create
+  resources :tasks, only: %i[cerate update]
 end
